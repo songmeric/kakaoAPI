@@ -1,0 +1,19 @@
+[package]
+name = "kiwi_reverse"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = "1.0.70"
+futures = "0.3.28"
+log = "0.4.17"
+simplelog = "0.12.1"
+tokio = { version = "1.27.0", features = ["full"] }
+
+kiwi-talk-app = { path = "../KiwiTalk/crates/kiwi-talk-app" }
+kiwi-talk-client = { path = "../KiwiTalk/crates/kiwi-talk-client" }
+talk-api-client = { path = "../KiwiTalk/crates/talk-api-client" }
+talk-loco-client = { path = "../KiwiTalk/crates/talk-loco-client" }
+talk-loco-command = { path = "../KiwiTalk/crates/talk-loco-command" }
